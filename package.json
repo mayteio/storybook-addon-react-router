@@ -1,13 +1,16 @@
 {
-  "name": "storybook-addon-react-router",
+  "name": "@harelpls/storybook-addon-react-router",
   "version": "1.0.0",
-  "description": "",
+  "description": "Simple decorator to wrap your stories in a <MemoryRouter />. Pass parameters under 'route' to the Router.",
   "main": "dist/index.js",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
-    "build": "babel --out-dir dist ./src"
+    "build": "babel --out-dir dist ./src --extensions '.tsx','.ts'"
   },
   "keywords": [],
   "author": "",
@@ -28,11 +31,11 @@
     "babel-loader": "^8.0.6",
     "eslint": "^6.8.0",
     "eslint-plugin-react": "^7.18.0",
-    "react-router": "^5.1.2",
     "typescript": "^3.7.5"
   },
   "peerDependencies": {
     "react": "^16.12.0",
-    "react-dom": "^16.12.0"
+    "react-dom": "^16.12.0",
+    "react-router": "^5.1.2"
   }
 }
